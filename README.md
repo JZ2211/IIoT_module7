@@ -26,7 +26,7 @@ The node in the local computer should receive message every 10 seconds. Open ```
 <img src="https://github.com/JZ2211/IIoT_module7/assets/100505718/6ab75a92-2736-48ae-9c75-e45502d948d1" width="600">
 
 ### 📝 Implemented Functions: 
-Plot curves based on checked data series. 
+Plot curves based on checked data series. Example data file is used and you can substitute it using other csv file.
 
 ### 📝 Steps: 
 1. Install Python package Plotly Dash and Pandas in a local computer:
