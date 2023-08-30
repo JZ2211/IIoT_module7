@@ -19,4 +19,5 @@ Examples in IIoT workshop Module 7: including Plotly Dash Open Source, Initial S
     - In the local computer: Import or copy file ```webapp_flow.json```
     - Configure MQTT in/MQTT out nodes in the flows based on your Mosquitto broker configuration
     - Deploy.
+
 The node in the local computer should receive message every 10 seconds. Open ```http://localhost:1880/ui``` in a browswer and you can observe the results.  
