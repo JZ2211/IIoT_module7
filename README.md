@@ -9,7 +9,7 @@ Examples in IIoT workshop Module 7: including Plotly Dash Open Source, Initial S
 * BME280 is connected to the Raspberry pi via I2C and publish sensor data periodically via MQTT broker. 
 * A local computer is subscribed in MQTT broker to the BME280 messages and the results are displayed via a web app dashboard on the localhost. The data are also saved to a csv file (named after the date).
 
-###Steps: 
+### Steps: 
 1.Please follow the instructions at https://nodered.org/docs/getting-started/local to install Node-RED in a locall computer, and https://nodered.org/docs/getting-started/raspberrypi for installation in a Raspberry Pi. 
 
 2.Setup the Mosquitto server (MQTT broker) in the Raspberry Pi: https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
