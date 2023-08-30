@@ -1,0 +1,119 @@
+[
+    {
+        "id": "2047e24e9cfa710d",
+        "type": "tab",
+        "label": "Rpi Flow",
+        "disabled": false,
+        "info": "This flow reads data from bme280 once every 10 seconds\r\nand then publish the message via MQTT broker in the Raspberry Pi\r\n",
+        "env": []
+    },
+    {
+        "id": "aaa1b869280faa85",
+        "type": "inject",
+        "z": "2047e24e9cfa710d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "e53bad130431e628"
+            ]
+        ]
+    },
+    {
+        "id": "e53bad130431e628",
+        "type": "Bme280",
+        "z": "2047e24e9cfa710d",
+        "name": "bme280",
+        "bus": "1",
+        "address": "0x77",
+        "topic": "bme280",
+        "extra": false,
+        "preasure": 1013.25,
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "ef5e5e3f1d78ba0b",
+                "2d971a66cd6f5ea4"
+            ]
+        ]
+    },
+    {
+        "id": "2d971a66cd6f5ea4",
+        "type": "debug",
+        "z": "2047e24e9cfa710d",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ef5e5e3f1d78ba0b",
+        "type": "mqtt out",
+        "z": "2047e24e9cfa710d",
+        "name": "mqtt -BME280",
+        "topic": "BME280",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2f18d9e1ad3703c7",
+        "x": 580,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2f18d9e1ad3703c7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "134.161.199.113",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
