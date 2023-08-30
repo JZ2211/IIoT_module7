@@ -15,8 +15,8 @@ Examples for IIoT workshop Module 7: Node-Red, Plotly Dash, and Initial State
 2. Setup the Mosquitto server (MQTT broker) in the Raspberry Pi: https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
 
 3. Run the example code: 
-    - In the Raspberry Pi: Import or copy file ```rpi_flow.json```
-    - In the local computer: Import or copy file ```webapp_flow.json```
+    - In the Raspberry Pi: Import or copy&paste file ```rpi_flow.json```
+    - In the local computer: Import or copy&paste file ```webapp_flow.json```
     - Configure MQTT in/MQTT out nodes in the flows based on your Mosquitto broker configuration
     - Deploy.
 
