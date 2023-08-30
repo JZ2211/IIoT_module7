@@ -1,5 +1,5 @@
 # IIoT_module7
-Examples in IIoT workshop Module 7: including Plotly Dash Open Source, Initial State, Node-Red
+Examples for IIoT workshop Module 7: Node-Red, Plotly Dash, and Initial State
 
 ## Node-Red Example
 <img src="https://github.com/JZ2211/IIoT_module7/assets/100505718/2a86ba18-f033-45e5-b4bd-3c83c91c9d1c" width = "400">
@@ -21,3 +21,12 @@ Examples in IIoT workshop Module 7: including Plotly Dash Open Source, Initial S
     - Deploy.
 
 The node in the local computer should receive message every 10 seconds. Open ```http://localhost:1880/ui``` in a browswer and you can observe the results.  
+
+## Plotly Dash Example
+
+### 📝 Implemented Functions: 
+Plot curves based on checked data series. 
+
+### 📝 Steps: 
+1. Install Plotly Dash and Pandas in a local computer:
+2. Run example python code: 
