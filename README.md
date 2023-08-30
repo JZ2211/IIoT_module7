@@ -23,10 +23,15 @@ Examples for IIoT workshop Module 7: Node-Red, Plotly Dash, and Initial State
 The node in the local computer should receive message every 10 seconds. Open ```http://localhost:1880/ui``` in a browswer and you can observe the results.  
 
 ## Plotly Dash Example
+<img src="https://github.com/JZ2211/IIoT_module7/assets/100505718/6ab75a92-2736-48ae-9c75-e45502d948d1" width="500"
 
 ### 📝 Implemented Functions: 
 Plot curves based on checked data series. 
 
 ### 📝 Steps: 
 1. Install Plotly Dash and Pandas in a local computer:
-2. Run example python code: 
+   ```pip install pandas
+      pip install dash```
+3. Run example python code: `dashapp_demo.py`
+4. Open URL http://localhost:8050 at a browser.
+5. You can select the data series to be displayed. 
